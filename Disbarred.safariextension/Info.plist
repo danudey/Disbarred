@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Dan Udey</string>
+	<key>Builder Version</key>
+	<string>7534.51.3</string>
+	<key>CFBundleDisplayName</key>
+	<string>Disbarred</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.cdslash.disbarred</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict/>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>disbarred.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Hides wrapper frames from services like Stumbleupon and Hootsuite</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.visibli.com</string>
+				<string>www.stumbleupon.com</string>
+				<string>www.reddit.com</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://disbarred.cdslash.net</string>
+</dict>
+</plist>
