@@ -15,7 +15,7 @@ function de_reddit()
 function de_visibli()
 {
     // Example URL: http://todmaffin.visibli.com/share/nYx865
-    document.location = document.getElementById('iframe').src;
+    document.location.href = document.getElementById('iframe').src;
 }
 
 function de_stumbl()
