@@ -41,6 +41,7 @@
 				<string>*.visibli.com</string>
 				<string>www.stumbleupon.com</string>
 				<string>www.reddit.com</string>
+				<string>summify.com</string>
 			</array>
 			<key>Include Secure Pages</key>
 			<true/>
