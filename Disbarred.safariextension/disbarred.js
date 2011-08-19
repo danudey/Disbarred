@@ -17,7 +17,16 @@ function de_summify()
 {
     if (document.location.href.indexOf('summify.com/story/') > 0)
     {
-        document.location.href = document.getElementById('summiFrame').src;
+        var iframe = document.getElementById('summiFrame');
+        if (iframe)
+        {
+            document.location.href = iframe.src;
+        }
+        else
+        {
+            uri = document.getElementById('blacklist').getElementsByTagName('a')[1].href
+            document.location.href = uri;
+        }
     }
 }
 
