@@ -3,6 +3,8 @@ var stuffs = {
         'stumbleupon.com': de_stumbl,
         'reddit.com': de_reddit,
         'summify.com': de_summify,
+        'scoop.it': de_scoopit,
+        'digg.com': de_digg,
 };
 
 function de_reddit()
@@ -11,6 +13,11 @@ function de_reddit()
     {
         top.location.href = document.getElementsByTagName('frame')[1].src;
     }
+}
+
+function de_digg()
+{
+    top.location.href = document.getElementsByTagName('iframe')[0].src;
 }
 
 function de_summify()
@@ -40,6 +47,18 @@ function de_stumbl()
 {
     // Example URL: http://su.pr/29zRZe
     document.location.href = document.getElementById('stumbleFrame').src;
+}
+
+function de_scoopit()
+{
+    // Example URL: http://www.scoop.it/t/big-data-large-cloud-and-huge-decisions/p/1329626193/
+    metas = document.getElementsByTagName('meta');
+    for (i=0; i<metas.length; i++) {
+      meta = metas[i];
+      if (meta.attributes['property'])
+          if (meta.attributes['property'] == 'og:url')
+            console.log(meta.attributes['content'])
+    }
 }
 
 function disbar()

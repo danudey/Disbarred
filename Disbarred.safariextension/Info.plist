@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Dan Udey</string>
 	<key>Builder Version</key>
-	<string>7534.51.3</string>
+	<string>8536.25</string>
 	<key>CFBundleDisplayName</key>
 	<string>Disbarred</string>
 	<key>CFBundleIdentifier</key>
@@ -42,6 +42,8 @@
 				<string>www.stumbleupon.com</string>
 				<string>www.reddit.com</string>
 				<string>summify.com</string>
+				<string>www.scoop.it</string>
+				<string>*.digg.com</string>
 			</array>
 			<key>Include Secure Pages</key>
 			<true/>
