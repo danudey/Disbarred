@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Disbarred by danudey</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Disbarred</h1>
+        <p>The Disbarred Safari Extension</p>
+
+        <p class="view"><a href="https://github.com/danudey/Disbarred">View the Project on GitHub <small>danudey/Disbarred</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/danudey/Disbarred/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/danudey/Disbarred/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/danudey/Disbarred">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>What is it?</h2>
+
+<p>Disbarred is a Safari extension to remove the annoying frames that some websites
+(such as StumbleUpon, Summify, and Visibli) add to links.</p>
+
+<h3>Download</h3>
+
+<p>You can download the extension here: </p>
+
+<h3>Why?</h3>
+
+<p>Disbarred is meant to work around a few problems that exist when sites frame other sites:</p>
+
+<ol>
+<li>Sometimes, the outer frames don't load. If these sites go down or have capacity issues,
+then suddenly the links you've shared don't work.</li>
+<li>Some browsers (especially mobile browsers or older non-WebKit browsers) have problems
+loading frames; this can prevent people from seeing (or at least, easily seeing) the content
+you're trying to re-share with them.</li>
+<li>Some frames are used to track traffic; if you're sharing someone else's link, they may be
+getting analytics data about the links that you send around, including via IM, via secured sites,
+or via e-mail.</li>
+<li>It's hard to determine at a glance whether a 'hidden' link is something you want to look at
+right now or not. For example, you may not want to watch a YouTube link on your phone, or
+Sports Illustrated at work. If you're sharing someone else's framed links, then people who see
+it have to take a gamble on whether it's something they want to click on or not.</li>
+</ol><h3>How does it work?</h3>
+
+<p>When a page with one of these bars is loaded, the extension injects Javascript into the page. This
+Javascript waits until the page has finished loading, and then redirects you to the page the site is
+framing.</p>
+
+<h4>Benefits</h4>
+
+<p>The main benefit to this approach is that you relatively quickly are redirected, meaning that you
+don't have to see the frame for very long, if at all; usually the framed page has barely started
+loading by the time the redirect happens, and you're instantly taken to the real page.</p>
+
+<p>Some of these bars are also used for analytics; they can tell who shared a link, through which medium,
+and how many people clicked on it. These bars will still be able to get their analytics data, so
+content providers can continue to understand their audience and how the links they share are viewed,
+but they won't get data about the links <em>you</em> share, especially over other mediums like IM, Facebook,
+and e-mail.</p>
+
+<h4>Drawbacks</h4>
+
+<p>Unfortunately, there's no easy way to bypass links entirely; the first time you load a page, it will
+always attempt to load the frame. This means that if the sharing site is down completely, you won't
+be able to load the page (but you wouldn't be able to load it anyway, so no loss).</p>
+
+<p>Also, if a particular element in a frame is incredibly slow to load (for example, analytics Javascript),
+then the redirect won't occur until it has, which may mean you've started to read the page by the time
+the redirect happens. The design should prevent this from being an issue though.</p>
+
+<h3>Aren't these bars useful? Don't they provide analytics data?</h3>
+
+<p>Sure they do, and that's fine. This is why the extension is designed to run AFTER the page
+is loaded. This should give these bars enough time to collect whatever analytics they want,
+so that the people sharing these links know who's clicking them and why.</p>
+
+<p>Most of the bars I see are meant to draw you back to the site or get you to use their sharing features;
+for example, they encourage you to re-share the link to Twitter or Facebook, which often requires
+creating an account on their site and associating it with your social media site of choice. These days,
+a lot of people just copy the link from their browser and paste it into a client such as TweetDeck or
+Hootsuite.</p>
+
+<h3>I've installed your extension and Site X still has an ugly frame around it!</h3>
+
+<p>Great! Send me the link and I'll add some code to take care of it. I'm glad to add any other
+sites that anyone else can come up with, but finding working links for all of them is tricky
+and time-consuming.</p>
+
+<p>You can suggest a new site to disbar by creating a <a href="http://github.com/danudey/Disbarred/issues/new">new GitHub issue</a> for it.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/danudey">danudey</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
